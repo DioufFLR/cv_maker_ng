@@ -1,0 +1,7 @@
+{
+  "name": "CV_MAKER_NG",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
