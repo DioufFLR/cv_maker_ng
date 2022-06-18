@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Bienvenue - {{apiVersion}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <form>
+    <app-input label="Email">
+      <ion-input type="email" [(ngModel)]="email" [ngModelOptions]="{standalone: true}"></ion-input>
+    </app-input>
+
+    <app-input label="Mot de passe">
+      <ion-input type="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}"></ion-input>
+    </app-input>
+
+    <ion-button type="submit" class="ion-margin" expand="full" (click)="submitLogin()">
+      Me connecter
+    </ion-button>
+  </form>
+
+</ion-content>
