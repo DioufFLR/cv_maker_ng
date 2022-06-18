@@ -6,18 +6,32 @@
 
 <ion-content>
 
-  <form>
-    <app-input label="Email">
-      <ion-input type="email" [(ngModel)]="email" [ngModelOptions]="{standalone: true}"></ion-input>
-    </app-input>
+  <ion-grid>
+    <ion-row>
+      <ion-col
+        size-sm="12" size-md="10"
+        size-lg="8" size-xl="6"
+        offset-md="1" offset-lg="2"
+        offset-xl="3"
 
-    <app-input label="Mot de passe">
-      <ion-input type="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}"></ion-input>
-    </app-input>
+      >
+        <form>
+          <app-input label="Email">
+            <ion-input type="email" [(ngModel)]="email" [ngModelOptions]="{standalone: true}"></ion-input>
+          </app-input>
 
-    <ion-button type="submit" class="ion-margin" expand="full" (click)="submitLogin()">
-      Me connecter
-    </ion-button>
-  </form>
+          <app-input label="Mot de passe">
+            <ion-input type="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}"></ion-input>
+          </app-input>
+
+          <ion-button type="submit" class="ion-margin" expand="full" (click)="submitLogin()">
+            Me connecter
+          </ion-button>
+        </form>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
 
 </ion-content>
